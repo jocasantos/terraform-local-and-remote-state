@@ -58,6 +58,7 @@ To set up Terraform with a remote state stored in an Amazon S3 bucket enhanced b
    - Use Terraform to create the S3 bucket and DynamoDB table. Define the resources in a module.
    - Create the directories needed and copy the data from this repo.
 
+   # Directory Structure
    TERRAFORM-LOCAL-AND-REMOTE-STATE/
    ├── aws/
    │   ├── local_state/
@@ -71,7 +72,7 @@ To set up Terraform with a remote state stored in an Amazon S3 bucket enhanced b
    ├── .gitignore
    └── README.md
 
-   > Change the bucket-id with your <account-id>
+   > Change the bucket-id with your account-id
 
    - Go to s3_dynamodb directory 
    ```bash
