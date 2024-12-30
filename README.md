@@ -31,7 +31,14 @@ Follow these steps to set up Terraform with a local state file:
    terraform init
    ```
 
-2. **Apply Configuration:**
+2. **Dry-Run:**
+
+   To see the changes before apply, run :
+   ```bash
+   terraform plan
+   ```   
+
+3. **Apply Configuration:**
 
    To apply your Terraform configuration and store the state locally, use:
    ```bash
@@ -42,9 +49,9 @@ Follow these steps to set up Terraform with a local state file:
 
 
 
-## Setting Terraform with a Remote State (S3 Bucket)
+## Setting Terraform with a Remote State (S3 Bucket and DynamoDB)
 
-To set up Terraform with a remote state stored in an Amazon S3 bucket, follow these steps:
+To set up Terraform with a remote state stored in an Amazon S3 bucket enhanced by DynamoDB (locking feature), follow these steps:
 
 1. **Configure Backend:**
 
