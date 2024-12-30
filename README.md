@@ -58,7 +58,19 @@ To set up Terraform with a remote state stored in an Amazon S3 bucket enhanced b
    - Use Terraform to create the S3 bucket and DynamoDB table. Define the resources in a module.
    - Create the directories needed and copy the data from this repo.
 
-   TERRAFORM-LOCAL-AND-REMOTE-STATE/ ├── aws/ │ ├── local_state/ │ │ ├── main.tf │ │ ├── terraform.lock.hcl │ │ ├── terraform.tfstate │ │ └── terraform.tfstate.backup │ ├── remote_state/ │ │ ├── main.tf │ │ ├── modules/ │ │ │ ├── s3_dynamodb/ │ │ │ │ ├── LICENSE.txt │ │ │ │ ├── main.tf │ │ │ │ ├── outputs.tf │ │ │ │ ├── terraform.lock.hcl │ │ │ │ └── terraform.tfstate ├── .gitignore └── README.md
+   ```plaintext
+   TERRAFORM-LOCAL-AND-REMOTE-STATE/
+   ├── aws/
+   │   ├── local_state/
+   │   │   ├── main.tf
+   │   ├── remote_state/
+   │   │   ├── main.tf
+   │   │   ├── modules/
+   │   │   │   ├── s3_dynamodb/
+   │   │   │   │   ├── main.tf
+   │   │   │   │   ├── outputs.tf
+   ├── .gitignore
+   └── README.md
 
    > Change the bucket-id with your account-id
 
