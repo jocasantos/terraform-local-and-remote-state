@@ -71,7 +71,8 @@ To set up Terraform with a remote state stored in an Amazon S3 bucket enhanced b
    │   │   │   │   ├── outputs.tf
    ├── .gitignore
    └── README.md
-
+   ```
+   
    > Change the bucket-id with your account-id
 
    - Go to s3_dynamodb directory 
